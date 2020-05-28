@@ -26,12 +26,7 @@ void loop() {
   agregarPlanta();
   revisarPulsadores();
   fijarRecorrido();
-  if (digitalRead(botones[0])==1){
-    digitalWrite(plantas[0], HIGH);
-    }
-  else{
-  digitalWrite(plantas[0],LOW);
-  }
+
 }
 void agregarPlanta(){}
 
@@ -42,19 +37,29 @@ void revisarPulsadores(){
   
    if(digitalRead(botones[0])==1){
     plantas[i]=2;
+    i++;
     }
   if (digitalRead[1]==1){
 
     plantas[i]=3;
-    
+    i++;;
     }
   if (digitalRead[2]==1){
 
     plantas[i]=4;
-    
+    i++;
     }
   }
   }
 
 
-void fijarRecorrido(){}
+void fijarRecorrido(){
+  
+  for(int e=0;i<3;i++){
+    digitalWrite(plantas[i], HIGH );
+    
+    
+    
+    }
+  
+  }
