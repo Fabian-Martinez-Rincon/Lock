@@ -1,1 +1,41 @@
-hokas
+Ascensor{
+variables
+	Piso:numero
+	Cantidad:numero
+	PB,PISO1,PISO2:numero
+	Pulsos:numero
+PB=0
+PISO1=1
+PISO2=2
+Planta=2
+SubirAlAscensor;
+RevisarPulsadores(Pulsos);
+FijarRecorrido(Piso,Pulsos)
+BajarDelAscensor;
+		
+}
+
+ElegirPiso(E NPiso,RevisarPulsadores1){
+
+
+	mientras(RevisarPulsadores1>0)
+		SI (NPiso=0){
+			mientras(NPiso<>0){
+				Bajar;
+			IrAPlantaBaja;}
+			}
+		Si(NPiso=1){
+			mientras(NPiso<>1)
+				si(NPiso<1)
+					Bajar;
+				Subir;
+			IrAPiso1}
+		
+		Si(NPiso=2)
+			mientras(NPiso<>2){
+				si(Npiso<2)
+					Subir;}
+	
+	
+
+}
