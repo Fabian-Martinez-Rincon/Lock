@@ -1,6 +1,9 @@
-int x;
 
-void setup() {
+int Contador=0;
+int x,y; //x Toma el valor del primer boton ingresado e y toma el valor del segundo
+int espera=400;
+int op;
+void setup() {  //Configuracion de pines 
   Serial.begin (9600);
   for(int i=2; i <=4; i++){
     pinMode(i, OUTPUT);
@@ -9,7 +12,8 @@ void setup() {
     pinMode(e,INPUT);
     
     }
-  Serial.println("Ingresar Contraseña");
+  Serial.println("Ingresar Contra");
+  Serial.println("Son solo 4 numeros");
   
 
     
@@ -20,77 +24,212 @@ void loop() {
 
 }
 
-void teclado(){
+
+
+
+void teclado(){         //teclado matricial
   digitalWrite(2,HIGH);
   digitalWrite(3,LOW);
   digitalWrite(4,LOW);
   if(digitalRead(5)==HIGH){
-    Serial.println("Numero:1"); 
+    Contador++;
+    if (Contador==1){                 //Tomas la posibilidad de cada pulsador en el caso de que se oprima primero, segundo, tercero o cuarto
+    Serial.println("1ER NUMERO :1"); 
     x=1;
-    delay(250); 
-      }
+    delay(espera); }
+    else if(Contador==2){
+      Serial.println("2DO NUMERO :1");
+    y=1;
+    delay(espera);}
+    else if(Contador==3){
+      
+      op=1;
+//      operar();
+    }}
   if(digitalRead(6)==HIGH){
-    Serial.println("numero:4");
+    Contador++;
+    if (Contador==1){
+    Serial.println("1ER NUMERO :4"); 
     x=4;
-    delay(250);
+    delay(espera); }
+    else if(Contador==2){
+      Serial.println("2DO NUMERO :4");
+    y=4;
+    delay(espera);}
+    else if(Contador==3){
+      
+      op=1;
+//      operar();
+    }
     }
   if (digitalRead(7)==HIGH){
-    Serial.println("Numero:7"); 
+    Contador++;
+    if (Contador==1){
+    Serial.println("1ER NUMERO :7"); 
     x=7;
-    delay(250); 
+    delay(espera); }
+    else if(Contador==2){
+      Serial.println("2DO NUMERO :7");
+    y=7;
+    delay(espera);}
+    else if(Contador==3){
+      
+      op=1;
+//      operar();
+    } 
     }
     if (digitalRead(8)==HIGH){
-    Serial.println("Numero:*"); 
+    Contador++;
+    if (Contador==1){
+    Serial.println("1ER NUMERO :*"); 
     x=20;
-    delay(250); 
+    delay(espera); }
+    else if(Contador==2){
+      Serial.println("2DO NUMERO :*");
+    y=20;
+    delay(espera);}
+    else if(Contador==3){
+      
+      op=1;
+//      operar();
+    }
     }
   digitalWrite(2, LOW);
   digitalWrite(3, HIGH);
   digitalWrite(4, LOW);
   if(digitalRead(5)==HIGH){
-    Serial.println("numero:2");
+    Contador++;
+    if (Contador==1){
+    Serial.println("1ER NUMERO :2"); 
     x=2;
-    delay(250);}
+    delay(espera); }
+    else if(Contador==2){
+      Serial.println("2DO NUMERO :2");
+    y=2;
+    delay(espera);}
+    else if(Contador==3){
+      
+      op=1;
+//      operar();
+    }
+    }
     if(digitalRead(6)==HIGH){
-    Serial.println("numero:5");
+    Contador++;
+    if (Contador==1){
+    Serial.println("1ER NUMERO :5"); 
     x=5;
-    delay(250);
+    delay(espera); }
+    else if(Contador==2){
+      Serial.println("2DO NUMERO :5");
+    y=5;
+    delay(espera);}
+    else if(Contador==3){
+      
+      op=1;
+//      operar();
+    }
     }
     if(digitalRead(7)==HIGH){
-    Serial.println("numero:8");
+    Contador++;
+    if (Contador==1){
+    Serial.println("1ER NUMERO :8"); 
     x=8;
-    delay(250);
+    delay(espera); }
+    else if(Contador==2){
+      Serial.println("2DO NUMERO :8");
+    y=8;
+    delay(espera);}
+    else if(Contador==3){
+      
+      op=1;
+//      operar();
+    }
     }
     if(digitalRead(8)==HIGH){
-    Serial.println("numero:0");
+    Contador++;
+    if (Contador==1){
+    Serial.println("1ER NUMERO :0"); 
     x=0;
-    delay(250);
+    delay(espera); }
+    else if(Contador==2){
+      Serial.println("2DO NUMERO :0");
+    y=0;
+    delay(espera);}
+    else if(Contador==3){
+      
+      op=1;
+//      operar();
+    }
     }
 digitalWrite(2, LOW);
   digitalWrite(3, LOW);
   digitalWrite(4, HIGH);
   if(digitalRead(5)==HIGH){
-    Serial.println("numero:3");
+    Contador++;
+    if (Contador==1){
+    Serial.println("1ER NUMERO :3"); 
     x=3;
-    delay(250);}
+    delay(espera); }
+    else if(Contador==2){
+      Serial.println("2DO NUMERO :3");
+    y=3;
+    delay(espera);}
+    else if(Contador==3){
+      
+      op=1;
+//      operar();
+    }
+    }
     if(digitalRead(6)==HIGH){
-    Serial.println("numero:6");
+    Contador++;
+    if (Contador==1){
+    Serial.println("1ER NUMERO :6"); 
     x=6;
-    delay(250);
+    delay(espera); }
+    else if(Contador==2){
+      Serial.println("2DO NUMERO :6");
+    y=6;
+    delay(espera);}
+    else if(Contador==3){
+      
+      op=1;
+//      operar();
+    }
     }
     if(digitalRead(7)==HIGH){
-    Serial.println("numero:9");
+    Contador++;
+    if (Contador==1){
+    Serial.println("1ER NUMERO :9"); 
     x=9;
-    delay(250);
+    delay(espera); }
+    else if(Contador==2){
+      Serial.println("2DO NUMERO :9");
+    y=9;
+    delay(espera);}
+    else if(Contador==3){
+      
+      op=1;
+//      operar();
     }
-    if(digitalRead(8)==HIGH){
-    Serial.println("numero:#");
+    }if(digitalRead(8)==HIGH){
+    Contador++;
+    if (Contador==1){
+    Serial.println("1ER NUMERO :#"); 
     x=21;
-    delay(250);
+    delay(espera); }
+    else if(Contador==2){
+      Serial.println("2DO NUMERO :#");
+    y=21;
+    delay(espera);}
+    else if(Contador==3){
+      
+      op=1;
+//      operar();
     }
+    }}
 
     
-  }    
+     
 
 
   
