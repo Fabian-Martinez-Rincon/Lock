@@ -9,10 +9,8 @@ void setup() {
     pinMode(e,INPUT);
     
     }
-  Serial.println("menu");
-  Serial.println("1_N1+N2");
-  Serial.println("2_N1*N2");
-  Serial.println("3_N1-N2");
+  Serial.println("Ingresar Contraseña");
+  
 
     
 }
@@ -54,8 +52,8 @@ void teclado(){
     x=2;
     delay(250);}
     if(digitalRead(6)==HIGH){
-    Serial.println("numero:4");
-    x=4;
+    Serial.println("numero:5");
+    x=5;
     delay(250);
     }
     if(digitalRead(7)==HIGH){
