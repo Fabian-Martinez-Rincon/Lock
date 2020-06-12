@@ -1,6 +1,6 @@
 
 int Contador=0;
-int x,y; //x Toma el valor del primer boton ingresado e y toma el valor del segundo
+int x,y,z,w; //x Toma el valor del primer boton ingresado e y toma el valor del segundo
 int espera=400;
 int op;
 void setup() {  //Configuracion de pines 
@@ -21,7 +21,15 @@ void setup() {  //Configuracion de pines
 
 void loop() {
   teclado();
-
+  /*
+Serial.println(x);
+delay(1000);
+Serial.println(y);
+delay(1000);
+Serial.println(z);
+delay(1000);
+Serial.println(w);
+delay(1000);*/
 }
 
 
@@ -42,10 +50,18 @@ void teclado(){         //teclado matricial
     y=1;
     delay(espera);}
     else if(Contador==3){
+      Serial.println("3ER NUMERO :1");
+    y=1;
+    delay(espera);
       
-      op=1;
-//      operar();
-    }}
+    }
+     else if(Contador==4){
+      Serial.println("4TO NUMERO :1");
+    y=1;
+    delay(espera);
+      
+    }
+    }
   if(digitalRead(6)==HIGH){
     Contador++;
     if (Contador==1){
@@ -57,9 +73,14 @@ void teclado(){         //teclado matricial
     y=4;
     delay(espera);}
     else if(Contador==3){
-      
-      op=1;
-//      operar();
+      Serial.println("3ER NUMERO :4");
+    y=4;
+    delay(espera);
+    }
+    else if(Contador==4){
+      Serial.println("4TO NUMERO :4");
+    y=4;
+    delay(espera);
     }
     }
   if (digitalRead(7)==HIGH){
@@ -72,11 +93,14 @@ void teclado(){         //teclado matricial
       Serial.println("2DO NUMERO :7");
     y=7;
     delay(espera);}
-    else if(Contador==3){
-      
-      op=1;
-//      operar();
-    } 
+     else if(Contador==3){
+      Serial.println("4ER NUMERO :7");
+    y=7;
+    delay(espera);}
+    else if(Contador==4){
+      Serial.println("4TO NUMERO :7");
+    y=7;
+    delay(espera);}
     }
     if (digitalRead(8)==HIGH){
     Contador++;
@@ -108,10 +132,13 @@ void teclado(){         //teclado matricial
     y=2;
     delay(espera);}
     else if(Contador==3){
-      
-      op=1;
-//      operar();
-    }
+      Serial.println("3ER NUMERO :2");
+    y=2;
+    delay(espera);}
+    else if(Contador==4){
+      Serial.println("4TO NUMERO :2");
+    y=2;
+    delay(espera);}
     }
     if(digitalRead(6)==HIGH){
     Contador++;
@@ -124,10 +151,13 @@ void teclado(){         //teclado matricial
     y=5;
     delay(espera);}
     else if(Contador==3){
-      
-      op=1;
-//      operar();
-    }
+      Serial.println("3ER NUMERO :5");
+    y=5;
+    delay(espera);}
+    else if(Contador==4){
+      Serial.println("4TO NUMERO :5");
+    y=5;
+    delay(espera);}
     }
     if(digitalRead(7)==HIGH){
     Contador++;
@@ -140,10 +170,13 @@ void teclado(){         //teclado matricial
     y=8;
     delay(espera);}
     else if(Contador==3){
-      
-      op=1;
-//      operar();
-    }
+      Serial.println("3ER NUMERO :8");
+    y=8;
+    delay(espera);}
+    else if(Contador==4){
+      Serial.println("4TO NUMERO :8");
+    y=8;
+    delay(espera);}
     }
     if(digitalRead(8)==HIGH){
     Contador++;
@@ -156,10 +189,13 @@ void teclado(){         //teclado matricial
     y=0;
     delay(espera);}
     else if(Contador==3){
-      
-      op=1;
-//      operar();
-    }
+      Serial.println("3ER NUMERO :0");
+    y=0;
+    delay(espera);}
+    else if(Contador==4){
+      Serial.println("4TO NUMERO :0");
+    y=0;
+    delay(espera);}
     }
 digitalWrite(2, LOW);
   digitalWrite(3, LOW);
@@ -175,10 +211,13 @@ digitalWrite(2, LOW);
     y=3;
     delay(espera);}
     else if(Contador==3){
-      
-      op=1;
-//      operar();
-    }
+      Serial.println("3ER NUMERO :3");
+    y=3;
+    delay(espera);}
+    else if(Contador==4){
+      Serial.println("4TO NUMERO :3");
+    y=3;
+    delay(espera);}
     }
     if(digitalRead(6)==HIGH){
     Contador++;
@@ -191,10 +230,14 @@ digitalWrite(2, LOW);
     y=6;
     delay(espera);}
     else if(Contador==3){
-      
-      op=1;
-//      operar();
-    }
+      Serial.println("3ER NUMERO :6");
+    y=6;
+    delay(espera);}
+    else if(Contador==4){
+      Serial.println("4TO NUMERO :6");
+    y=6;
+    delay(espera);}
+    
     }
     if(digitalRead(7)==HIGH){
     Contador++;
@@ -207,10 +250,13 @@ digitalWrite(2, LOW);
     y=9;
     delay(espera);}
     else if(Contador==3){
-      
-      op=1;
-//      operar();
-    }
+      Serial.println("3ER NUMERO :9");
+    y=9;
+    delay(espera);}
+    else if(Contador==4){
+      Serial.println("4TO NUMERO :9");
+    y=9;
+    delay(espera);}
     }if(digitalRead(8)==HIGH){
     Contador++;
     if (Contador==1){
