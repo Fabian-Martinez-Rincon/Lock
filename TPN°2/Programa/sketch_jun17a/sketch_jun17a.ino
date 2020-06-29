@@ -1,5 +1,5 @@
+//Variables que son un desastre.
 #include <Servo.h>
-
 #include <LiquidCrystal.h>
 Servo myservo;
 int parametro2,parametro,numero,cuatroN,i,j,k,boton,r,b,z,util,bien,p=0;
@@ -14,8 +14,9 @@ bool pos=false;
 LiquidCrystal lcd(8, 9, 4, 5, 6, 7);
 int entrada_analogica_teclado = A1;
 int valor_analogico_teclado = 0;
-
 int estado_lcd=1;
+
+//Parte de configuracion de pines
 void setup(){
   Serial.begin(9600);
   myservo.attach(10,750,1235);
@@ -38,13 +39,15 @@ void loop(){
     valor_analogico_teclado = analogRead(entrada_analogica_teclado);
     while(analogRead(entrada_analogica_teclado)>10) delay(1);
     
-   leerTeclado();
+   leerTeclado();     //Leo el valor de tension de cada pin al ser pulsado.
    CargarTeclado();  //Cargo el teclado y uso un parametro que me devuelve un valor
-   CuatroNumeros();
-   Abrir();
-   if(cambiar==true){
-    RecorrerContra();
-    
+   CuatroNumeros();  //Hay un contador en los pulsadores y en cuanto llegue a 4 se inicializa esta funcion
+   Abrir();           //En cuanto el contador que compara los dos arreglos sea 4, se abre el servo y muestra en el lcd "correcto"
+   if(cambiar==true){ //La funcion abrir pone "cambiar" como true y se ejecuta la funcion siguiente 
+    RecorrerContra(); //Almacena en el arreglo prestablecido, la contaseña que ingresamos previamente
+        //En esta funcion pone "almaceno" en verdadero y  se activa la configuracion de otro declado en el que esta la opcion de ingresar
+        //el codigo especial, o ingresar nuestra contraseña. En el caso del codigo especial sigue como antes y en el caso de ingresar nuestro
+        //codigo, se activa la funcion del servo motor
     }
    
   }
