@@ -16,8 +16,7 @@ int entrada_analogica_teclado = A1;
 int valor_analogico_teclado = 0;
 int estado_lcd=1;
 
-//Parte de configuracion de pines
-
+//__________________________________________________________________________________________________________________________________________________________________________________________
 void setup()
 {
   Serial.begin(9600);
@@ -35,6 +34,7 @@ void setup()
   lcd.setCursor(0,1);
 }
 
+//__________________________________________________________________________________________________________________________________________________________________________________________
 void loop()
 {
   if(analogRead(entrada_analogica_teclado)>10)                             //mientras la tension que este en el pin analogico sea menor a 10 se ejecuta lo siguiente
@@ -57,6 +57,7 @@ void loop()
   
 }
 
+//__________________________________________________________________________________________________________________________________________________________________________________________
 void leerTeclado() // Tomo los pulsadores segun rl valor de tension en pines
 {  
   
@@ -74,8 +75,9 @@ void leerTeclado() // Tomo los pulsadores segun rl valor de tension en pines
     if (valor_analogico_teclado<=(445+tolerancia) && valor_analogico_teclado>=(445-tolerancia)) boton = 42;
     
   
-  }
-  
+}
+
+//__________________________________________________________________________________________________________________________________________________________________________________________
  void  CargarTeclado()
  {
     if (CambiaContra==false) //cargamos el teclado y cuando llega a 4 se reinicia
@@ -98,6 +100,7 @@ void leerTeclado() // Tomo los pulsadores segun rl valor de tension en pines
     }
  }
  
+//__________________________________________________________________________________________________________________________________________________________________________________________
 void RecorrerContra()
 {
     lcd.clear();
@@ -125,7 +128,8 @@ void RecorrerContra()
     }
   
  }
-    
+
+//__________________________________________________________________________________________________________________________________________________________________________________________    
 void CuatroNumeros()                                        // En cuanto la contraseña tenga 4 digitos se ejecuta esta funcion
 {
     int b;
@@ -180,6 +184,7 @@ void CuatroNumeros()                                        // En cuanto la cont
   
   }
 
+//__________________________________________________________________________________________________________________________________________________________________________________________
 void Abrir()                                             // es correcto y restauro la variable k para empezar de nuevo
     {
         if (k==4)                                        //cuando las cuatro posiciones del arreglo coincidad con las del condigo especial se ejecuta
@@ -199,8 +204,7 @@ void Abrir()                                             // es correcto y restau
 
     }
   
-  
-
+//__________________________________________________________________________________________________________________________________________________________________________________________  
 void NuevoTeclado()
 {
       
@@ -254,6 +258,7 @@ void NuevoTeclado()
         
  } 
 
+//__________________________________________________________________________________________________________________________________________________________________________________________
  void ServoMotor()
  {
     lcd.clear();
