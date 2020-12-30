@@ -41,5 +41,17 @@ Comparamos cada cifra del arreglo dependiendo de la posición. Cada vez una cifr
 ### Parte de la función
 ![](Images/10.jpg)
 
+En el caso de que la contraseña sea incorrecta, nos mostraria lo siguiente en pantalla
+### Caso incorrecto
+
+![](Images/11.jpg)
+
+En el caso de que los cuatro digitos sean iguales, tanto en valor, como en posición, se ejecutaria la siguiente funcion para poder ingresar una nueva contraseña.
+
+### Función
+![](Images/13.jpg)
+
+### Nueva Contraseña
+![](Images/12.jpg)
 
 
