@@ -16,3 +16,30 @@ Leemos la tensión de los pines de la siguiente forma.
 Nos darían estos datos según los pulsadores (de izquierda a derecha).
 ### Datos de tensión.
 ![](Images/5.jpg)
+
+### Los datos leidos según la tensión de los pines
+![](Images/6.jpg)
+
+Una vez que tenemos todos los datos de los pulsadores, configuramos la lectura de pines
+
+### Lectura de pines
+![](Images/7.jpg)
+
+Los botones los cargamos de la siguiente manera (Hay dos partes en las que explicaremos más adelante)
+
+### Cargar Teclado
+![](Images/8.jpg)
+
+Mostramos los datos pulsados tanto en el display como en la terminal virtual de Proteus
+### Ejemplo
+![](Images/9.jpg)
+
+Primero tenemos un código especial, si se inserta el código especial tenemos que ingresar una contraseña de 4 dígitos a nuestro gusto.
+Tenemos que comparar dos arreglos. Para esto tenemos que cargar un arreglo llamado contra[] (este es el arreglo que mantiene los datos momentáneos). Una vez cargado este arreglo, tenemos que recorrer tanto el arreglo que nosotros cargamos como el que tenemos como “Código especial”.
+Comparamos cada cifra del arreglo dependiendo de la posición. Cada vez una cifra coincida en la misma posición de ambas se aumentará uno en una variable llamada “k”.(Esta en la funcion llamada “CuatroNumeros” al final del informe ).
+
+### Parte de la función
+![](Images/10.jpg)
+
+
+
