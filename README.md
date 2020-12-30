@@ -54,4 +54,16 @@ En el caso de que los cuatro digitos sean iguales, tanto en valor, como en posic
 ### Nueva Contraseña
 ![](Images/12.jpg)
 
+En la funcion “Abrir”, ponemos a pone tanto la variable “cambiar” como “cambiarContra” en true. 
+La de “cambiar” la utilizamos para poder usar la función “recorrerContra” y el teclado toma como true a “CambiarContra” para poder utilizar la otra parte de la funcion.
 
+### Contraseña actualizada 
+![](Images/14.jpg)
+Una vez que elegimos los 4 numeros para nuestra contraseña, se reinicia, pero ya con nuestra contraseña guardada. Si ponemos la contraseña que elegimos después de poner el codigo especial, se tiene que encender el servomotor.
+
+### Comprobamos nueva contraseña
+![](Images/15.jpg)
+
+Como la parte del servo estaba en mis temas, se lo deje a mi compañero. Aun así, imprimí un mensaje de que pasaría en el caso de que se activase.
+### Conclusión.
+En este trabajo tuve problemas en la parte en la que tuve que cargar un arreglo nuevo. Implemente todas las herramientas que vimos estos años además de algunas cosas que fueron de investigación personal.
