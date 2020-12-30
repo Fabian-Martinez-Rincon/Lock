@@ -57,8 +57,9 @@ En el caso de que los cuatro digitos sean iguales, tanto en valor, como en posic
 En la funcion “Abrir”, ponemos a pone tanto la variable “cambiar” como “cambiarContra” en true. 
 La de “cambiar” la utilizamos para poder usar la función “recorrerContra” y el teclado toma como true a “CambiarContra” para poder utilizar la otra parte de la funcion.
 
-### Contraseña actualizada 
+### Contraseña actualizada.
 ![](Images/14.jpg)
+
 Una vez que elegimos los 4 numeros para nuestra contraseña, se reinicia, pero ya con nuestra contraseña guardada. Si ponemos la contraseña que elegimos después de poner el codigo especial, se tiene que encender el servomotor.
 
 ### Comprobamos nueva contraseña
