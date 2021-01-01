@@ -34,7 +34,7 @@ We show the data pressed both on the display and in the virtual Proteus terminal
 ### Example
 ![](Images/9.jpg)
 
-Primero tenemos un código especial, si se inserta el código especial tenemos que ingresar una contraseña de 4 dígitos a nuestro gusto.
+First we have a special code, if the special code is inserted we have to enter a 4-digit password to our liking.
 Tenemos que comparar dos arreglos. Para esto tenemos que cargar un arreglo llamado contra[] (este es el arreglo que mantiene los datos momentáneos). Una vez cargado este arreglo, tenemos que recorrer tanto el arreglo que nosotros cargamos como el que tenemos como “Código especial”.
 Comparamos cada cifra del arreglo dependiendo de la posición. Cada vez una cifra coincida en la misma posición de ambas se aumentará uno en una variable llamada “k”.(Esta en la funcion llamada “CuatroNumeros” al final del informe ).
 
