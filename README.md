@@ -35,8 +35,8 @@ We show the data pressed both on the display and in the virtual Proteus terminal
 ![](Images/9.jpg)
 
 First we have a special code, if the special code is inserted we have to enter a 4-digit password to our liking.
-Tenemos que comparar dos arreglos. Para esto tenemos que cargar un arreglo llamado contra[] (este es el arreglo que mantiene los datos momentáneos). Una vez cargado este arreglo, tenemos que recorrer tanto el arreglo que nosotros cargamos como el que tenemos como “Código especial”.
-Comparamos cada cifra del arreglo dependiendo de la posición. Cada vez una cifra coincida en la misma posición de ambas se aumentará uno en una variable llamada “k”.(Esta en la funcion llamada “CuatroNumeros” al final del informe ).
+We have to compare two arrangements. For this we have to load an array called against []. (this is the array that contains the momentary data). Once this fix is loaded, we have to go through both the fix that we load and the one we have as "Special Code".
+We compare each figure in the arrangement according to position. Every time a number matches in the same position of both, it will be incremented by one in a variable called "k". (This in the function called "FourNumbers" at the end of the report).
 
 ### Part of the function
 ![](Images/10.jpg)
@@ -48,23 +48,23 @@ In the event that the password is incorrect, it would show us the following on t
 
 In the event that the four digits are equal, both in value and in position, the following function will be executed to be able to enter a new password.
 
-### Función
+### Fuction
 ![](Images/13.jpg)
 
-### Nueva Contraseña
+### New password
 ![](Images/12.jpg)
 
-En la funcion “Abrir”, ponemos a pone tanto la variable “cambiar” como “cambiarContra” en true. 
-La de “cambiar” la utilizamos para poder usar la función “recorrerContra” y el teclado toma como true a “CambiarContra” para poder utilizar la otra parte de la funcion.
+In the "Open" function, we set both the "change" and "changeContra" variables to true. 
+We use the "change" function to be able to use the "traverseContra" function and the keyboard takes "ChangeContra" as true to use the other part of the function.
 
-### Contraseña actualizada.
+### Password update
 ![](Images/14.jpg)
 
-Una vez que elegimos los 4 numeros para nuestra contraseña, se reinicia, pero ya con nuestra contraseña guardada. Si ponemos la contraseña que elegimos después de poner el codigo especial, se tiene que encender el servomotor.
+Once we choose the 4 numbers for our password, it restarts, but with our password saved. If we put the password that we choose after putting the special code, the servomotor has to be turned on.
 
-### Comprobamos nueva contraseña
+### We check new password
 ![](Images/15.jpg)
 
-Como la parte del servo estaba en mis temas, se lo deje a mi compañero. Aun así, imprimí un mensaje de que pasaría en el caso de que se activase.
-### Conclusión.
-En este trabajo tuve problemas en la parte en la que tuve que cargar un arreglo nuevo. Implemente todas las herramientas que vimos estos años además de algunas cosas que fueron de investigación personal.
+Since the servo part was in my topics, I left it to my partner. Even so, I printed a message of what would happen if it was activated.
+### Conclusion.
+EIn this job I had problems in the part where I had to load a new arrangement. I implemented all the tools that we saw these years in addition to some things that were personal research.
